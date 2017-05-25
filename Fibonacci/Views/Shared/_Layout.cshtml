@@ -23,7 +23,8 @@
                 <ul class="nav navbar-nav">
                     <li>@Html.ActionLink("Home", "Index", "Home")</li>
                     <li>@Html.ActionLink("Generate", "Index", new { gener = true })</li>
-                    <li>@Html.ActionLink("Fibonacci", "Index", "fibonaccis")</li>
+                    <li>@Html.ActionLink("List", "Index", "fibonaccis")</li>
+                    <li>@Html.ActionLink("Fibonacci", "Index", new { gener = false })</li>
                 </ul>
                 @Html.Partial("_LoginPartial")
             </div>

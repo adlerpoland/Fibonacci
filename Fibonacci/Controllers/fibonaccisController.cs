@@ -29,7 +29,7 @@ namespace Fibonacci.Controllers
 
         public int RandomInt()
         { 
-            return random.Next(1, 100);
+            return random.Next(1, 20);
         }
 
         public static string RandomString(int length)
@@ -42,9 +42,25 @@ namespace Fibonacci.Controllers
         // GET: fibonaccis
         public ActionResult Index(bool? gener)
         {
-            if(gener != null)
+            if (gener == true)
                 generate();
+            else if (gener == false)
+                Fibon();          
             return View(db.fibonaccis.ToList());
+        }
+
+        public void Fibon()
+        {
+            foreach (var f in db.fibonaccis)
+                f.n = fibo(f.n);
+        }
+
+
+        public int fibo(int n)
+        {
+            if (n > 1)
+                return fibo(n - 1) + fibo(n - 2);
+            return n;
         }
 
         // GET: fibonaccis/Details/5
