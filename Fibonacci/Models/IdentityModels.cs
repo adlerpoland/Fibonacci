@@ -29,5 +29,7 @@ namespace Fibonacci.Models
         {
             return new ApplicationDbContext();
         }
+
+        public System.Data.Entity.DbSet<Fibonacci.Models.fibonacci> fibonaccis { get; set; }
     }
 }

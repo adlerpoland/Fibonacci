@@ -5,6 +5,13 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fibonacci", "Fibonacci\Fibonacci.csproj", "{E47D1BA1-2F30-433E-B5AA-EDE149C6AC62}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoadTest", "LoadTest\LoadTest.csproj", "{2418D60E-3EB0-4972-BFD6-6013AAB9185D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{6B402050-E795-4952-8157-DD3FFDA4FEA5}"
+	ProjectSection(SolutionItems) = preProject
+		Local.testsettings = Local.testsettings
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +22,10 @@ Global
 		{E47D1BA1-2F30-433E-B5AA-EDE149C6AC62}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E47D1BA1-2F30-433E-B5AA-EDE149C6AC62}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E47D1BA1-2F30-433E-B5AA-EDE149C6AC62}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2418D60E-3EB0-4972-BFD6-6013AAB9185D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2418D60E-3EB0-4972-BFD6-6013AAB9185D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2418D60E-3EB0-4972-BFD6-6013AAB9185D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2418D60E-3EB0-4972-BFD6-6013AAB9185D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
